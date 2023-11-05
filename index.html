@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Contact Form Task</title>
+    <link rel="stylesheet" href="./src/css/style.css">       <!-- Paul fixed (originally was: href="./src/scss/style.css") -->
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h1>Contact Us</h1>
+        <form class="contactus-form">         <!-- Paul added new class to <form> tag to fix length of input fields  -->
+            <input type="text" name="name" placeholder="Your name" class="input-field">
+            <input type="text" name="email" placeholder="Your email *" class="input-field">
+            <textarea name="message" placeholder="Your message *" class="input-field"></textarea>
+            <input type="submit" value="Send" class="submit-btn">
+        </form>
+    </div>
+
+    <!-- Message modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+
+
+    <script src="./src/js/init.js" type="module"></script>
+
+</body>
+
+</html>
